@@ -7,14 +7,13 @@
         "64": "./icons/tomato64.png",
         "128": "./icons/tomato128.png"
     },
-    "version": "0.1.0",
+    "version": "0.1.1",
     "manifest_version": 2,
     "browser_action": {
         "default_popup": "popup.html"
     },
     "background": {
-        "scripts": ["/js/background.js"],
-        "persistent": false
+        "scripts": ["/js/background.js"]
     },
     "permissions": ["notifications", "storage"],
     "options_ui": {
