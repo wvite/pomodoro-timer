@@ -3,7 +3,8 @@
   "version": "0.1.2",
   "description": "Simple pomodoro timer for Chrome",
   "scripts": {
-    "dev": "webpack --watch"
+    "dev": "webpack --watch",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
