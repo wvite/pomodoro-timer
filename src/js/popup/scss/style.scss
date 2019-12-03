@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300");
+@import "./digital_timer.scss";
+
+$GREEN: rgb(70, 200, 100);
+$RED: rgb(224, 62, 62);
+
+* {
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: 300px;
+  background-color: lightgray;
+
+  .work {
+    background-color: $RED;
+  }
+
+  .break {
+    background-color: $GREEN;
+  }
+}
+
+.header {
+  width: 100%;
+  .settings {
+    width: 100%;
+    padding: 0.5rem;
+
+    .add {
+      float: left;
+    }
+    .close {
+      float: right;
+    }
+  }
+  img.setting {
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    opacity: 0.8;
+    padding: 0.25rem;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  .pomodoro {
+    padding: 1.5em 0;
+    text-align: center;
+
+    .timer {
+      display: inline-block;
+      list-style-type: none;
+
+      span {
+        font-size: 4em;
+      }
+    }
+    .btn {
+      padding: 0.5em 1em 0 1em;
+      display: inline-block;
+      &:hover {
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}
+
+.task-list {
+  .task {
+    height: 2.5rem;
+    .task-name {
+      float: left;
+      text-transform: uppercase;
+      padding: 0.6em;
+    }
+    .task-time {
+      float: right;
+      padding: 0.6em;
+    }
+    .task-delete {
+      display: none;
+      width: 2rem;
+      height: 100%;
+      float: right;
+      opacity: 0.4;
+      padding: 7.5px 0;
+      img.trash {
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        border-radius: 50%;
+        background: white;
+        opacity: 0.7;
+      }
+    }
+
+    &:hover .task-delete {
+      display: block;
+    }
+  }
+}
